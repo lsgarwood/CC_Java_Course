@@ -26,7 +26,7 @@ public class Variables {
 	    //print it
 	    System.out.println(intsCanHoldDecimals);
 	    
-	    //char - ni single quotes
+	    //char - in single quotes
 	    char expectedGrade = 'A';
 	    System.out.println(expectedGrade);
 	    
@@ -51,6 +51,12 @@ public class Variables {
 	    Prints:
 	    Hello
 	    Goodbye
+	    */
+	    
+	    // Static Checking - a java programme will not compile if a variable is assigned a value of an incorrect type
+	    
+	    /* Naming - Naming variables according to convention leads to clear, readable, and maintainable code. 
+	    A variable starts with a valid letter, or a $, or a _. No other symbols or numbers can begin a variable name
 	    */
 	}
 
