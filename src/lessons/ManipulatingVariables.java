@@ -65,7 +65,44 @@ public class ManipulatingVariables {
 	    	Modulo (%=) */
 	    
 	    // Order of Operations
+	    /*
+	     * The order is as follows:
+
+		Parentheses
+		Exponents
+		Modulo/Multiplication/Division
+		Addition/Subtraction
+		(parentheses -> multiplication -> division -> modulo -> addition -> subtraction.)
+	     */
+	    int num = 5 * (10 - 4) + 4 / 2;
 	    
+	    // (10-4) first - 5 * 6 + 4 / 2 
+	    // 5 * 6 next - 30 + 4 / 2
+	    // 4 / 2 next - 30 + 2
+	    // so num = 32
 	    
+	    // Greater than and Less Than
+	    double bankBalance = 20000.01;
+	    double amountToWithdraw = 5000.01;
+	    System.out.print(amountToWithdraw < bankBalance);
+	    //this will print true, since amountToWithdraw is less than balance
+	    double myBalance = 200.05;
+	    double costOfBuyingNewLaptop = 1000.05;
+	    boolean canBuyLaptop = myBalance > costOfBuyingNewLaptop;
+	    //canBuyLaptop is false, since 200.05 is not more than 1000.05
+	    
+	    // Equals and Not Equals
+	    double paycheckAmount1 = 620;
+	    double calculatedPaycheck = 15.50 * 40;
+	     
+	    System.out.print(paycheckAmount1 == calculatedPaycheck);
+	    // This will print true, since paycheckAmount equals calculatedPaycheck
+	    
+	    double balance1 = 20000.0;
+	    double amountToDeposit = 620;
+	    double updatedBalance = balance1 + amountToDeposit;
+	     
+	    boolean balanceHasChanged = balance1 != updatedBalance;
+	    // balanceHasChanged holds true, since balance does not equal updatedBalance
 	}
 }
