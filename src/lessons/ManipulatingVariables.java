@@ -134,5 +134,12 @@ public class ManipulatingVariables {
     	String message = "Your balance is: " + balance2;
     	System.out.println(message);
 	    // This code will print: Your balance is: 10000
+    	
+    	// final keyword
+    	// To declare a variable with a value that cannot be manipulated, we need to use the final keyword.
+    	final int yearBorn = 1986;
+    	
+    	// When we declare a variable using final, the value cannot be changed; any attempts at doing so will cause an error to occur:
+    	// error: cannot assign a value to final variable yearBorn
 	}
 }
