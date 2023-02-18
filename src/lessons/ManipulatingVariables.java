@@ -104,5 +104,35 @@ public class ManipulatingVariables {
 	     
 	    boolean balanceHasChanged = balance1 != updatedBalance;
 	    // balanceHasChanged holds true, since balance does not equal updatedBalance
+	    
+	    //Greater/Less Than or Equal To
+	    double paycheckAmount2 = 620;
+	    double calculatedPaycheck1 = 15.50 * 40;
+	    System.out.println(paycheckAmount2 >= calculatedPaycheck1);
+	    //this will print true, since paycheckAmount equals calculatedPaycheck
+	    
+	    // .equals()
+	    /* With objects, such as Strings, we can’t use the primitive equality operator. To test equality with objects, we use a built-in method called .equals(). When comparing objects, make sure to always use .equals(). == will work occasionally, but the reason why it sometimes works has to do with how objects are stored in memory */
+	    
+	    String person1 = "Paul";
+	    String person2 = "John";
+	    String person3 = "Paul";
+	     
+	    System.out.println(person1.equals(person2));
+	    // Prints false, since "Paul" is not "John"
+	     
+	    System.out.println(person1.equals(person3));
+	    // Prints true, since "Paul" is "Paul"
+	    
+	    //String Concatenation
+	    String username = "PrinceNelson";
+	    System.out.println("Your username is: " + username);
+	    // Your username is: PrinceNelson
+	    // We can even use a primitive datatype as the second variable to concatenate, and Java will intelligently make it a String first:
+
+    	int balance2 = 10000;
+    	String message = "Your balance is: " + balance2;
+    	System.out.println(message);
+	    // This code will print: Your balance is: 10000
 	}
 }
